@@ -17,12 +17,6 @@ from urllib.parse import urljoin
 # In[3]:
 
 
-conn = 'mongodb://localhost:27017'
-client = pymongo.MongoClient(conn)
-
-# Define the 'classDB' database in Mongo
-db = client.classDB
-
 
 # In[4]:
 
@@ -250,8 +244,8 @@ hemisphere_image_urls
 # In[ ]:
 
 def scrape():
-    scraping_codes = {}
-    #your codes for scraping
+    scraping_codes = {}
+ 
     scraping_codes['News Titles'] = news_title
     scraping_codes['News Paragraphs'] = news_p
     scraping_codes['Featured Image'] = featured_image_url
