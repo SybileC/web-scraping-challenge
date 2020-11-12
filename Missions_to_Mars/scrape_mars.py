@@ -244,9 +244,8 @@ hemisphere_image_urls
 # In[ ]:
 
 def scrape():
-    scraping_codes = {}
- 
-    scraping_codes['News Titles'] = news_title
+    scraping_codes={}
+    scraping_codes['News Titles'] = news_title
     scraping_codes['News Paragraphs'] = news_p
     scraping_codes['Featured Image'] = featured_image_url
     scraping_codes['table'] = data

@@ -20,7 +20,7 @@ def scrape():
 
     mongo.db.collection.update({}, mars_info, upsert=True)
 
-    return reditect("/")
+    return redirect("/")
 
 
 
