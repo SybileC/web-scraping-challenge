@@ -243,11 +243,15 @@ hemisphere_image_urls
 
 # In[ ]:
 
-def scrape():
+def scrape_info():
     scraping_codes={}
     scraping_codes['titles'] = news_title
     scraping_codes['paragraphs'] = news_p
     scraping_codes['featured'] = featured_image_url
     scraping_codes['table'] = data
     scraping_codes['hemispheres'] = hemisphere_image_urls
+    
+    # Quit browser
+    browser.quit()
+    
     return scraping_codes
